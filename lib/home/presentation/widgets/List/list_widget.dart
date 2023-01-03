@@ -54,50 +54,67 @@ class _ListWidgetState extends State<ListWidget> {
                 padding: const EdgeInsets.all(7.5),
                 child: Container(
                   width: 350,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Color(0x334385f6),
-                  ),
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 18,
-                    vertical: 14,
-                  ),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      SizedBox(
-                        width: 36,
-                        height: 37.03,
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Container(
-                              width: 36,
-                              height: 37.03,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10.28),
-                                color: Color(0xff4c8eff),
-                              ),
-                              child: const Icon(Icons.qr_code_outlined),
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      elevation: 0,
+                      backgroundColor: Color.fromARGB(60, 67, 133, 246),
+                      
+                      shadowColor: null,
+                      shape: const RoundedRectangleBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(20))),
+                    ),
+                    onPressed: () {},
+                    child: Container(
+                      width: 350,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Colors.transparent,
+                      ),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 10,
+                        vertical: 14,
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          SizedBox(
+                            width: 36,
+                            height: 37.03,
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Container(
+                                  width: 36,
+                                  height: 37.03,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10.28),
+                                    color: Color(0xff4c8eff),
+                                  ),
+                                  child: const Icon(
+                                    Icons.qr_code_outlined,
+                                    color: Colors.black,
+                                  ),
+                                ),
+                              ],
                             ),
-                          ],
-                        ),
+                          ),
+                          const SizedBox(width: 23),
+                          Text(
+                            _user[index].title.toString(),
+                            style: const TextStyle(
+                              color: Color(0xff211f1f),
+                              fontSize: 18,
+                              fontFamily: "Roboto",
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ],
                       ),
-                      const SizedBox(width: 23),
-                      Text(
-                        _user[index].title.toString(),
-                        style: const TextStyle(
-                          color: Color(0xff211f1f),
-                          fontSize: 18,
-                          fontFamily: "Roboto",
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
                 ),
               ),
