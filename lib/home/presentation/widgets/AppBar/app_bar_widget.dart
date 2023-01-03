@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class AppBarWidget extends StatelessWidget {
   const AppBarWidget({super.key});
@@ -10,7 +11,7 @@ class AppBarWidget extends StatelessWidget {
       padding: const EdgeInsets.only(
         top: 20,
         bottom: 0,
-        left: 0,
+        left: 10,
         right: 0,
       ),
       child: Container(
@@ -50,12 +51,12 @@ class AppBarWidget extends StatelessWidget {
                                   child: SvgPicture.asset('assets/Dot.svg',
                                       semanticsLabel: 'vector')),
                             ]))),
-                    const Positioned(
+                     Positioned(
                         top: 13,
                         child: Text(
-                          'Мои коды',
+                          'title'.tr().toString(),
                           textAlign: TextAlign.left,
-                          style: TextStyle(
+                          style: const TextStyle(
                               color: Color.fromRGBO(33, 31, 31, 1),
                               fontFamily: 'Roboto',
                               fontSize: 24,
