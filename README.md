@@ -1,16 +1,20 @@
-# flutter_figma_test
+# Figma Test
 
-A new Flutter project.
+## Technologies that are used:
+- Dart
+- Flutter
+- Dependency Injection, GetIt
+- Http
+- Equatable
+- Easy Localization
+- Google Nav Bar
+- Git
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Video:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+https://user-images.githubusercontent.com/106264625/210436171-cb1f7b64-f3e4-4fd6-82d8-30c117a0540b.mp4
+
