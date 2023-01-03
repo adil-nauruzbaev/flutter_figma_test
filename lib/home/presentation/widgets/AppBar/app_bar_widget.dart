@@ -18,7 +18,7 @@ class AppBarWidget extends StatelessWidget {
         width: 360,
         height: 56,
         decoration: const BoxDecoration(
-          color: Color.fromRGBO(255, 255, 255, 1),
+          color: Colors.white,
         ),
         child: Stack(
           children: <Widget>[
@@ -29,7 +29,7 @@ class AppBarWidget extends StatelessWidget {
                 width: 360,
                 height: 56,
                 decoration: const BoxDecoration(
-                  color: Color.fromRGBO(255, 255, 255, 1),
+                  color: Colors.white,
                 ),
                 child: Stack(
                   children: <Widget>[

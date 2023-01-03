@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 abstract class AppTheme {
   static final light = ThemeData(
     fontFamily: 'MarkProbold',
-    scaffoldBackgroundColor: Colors.grey[50],
+    scaffoldBackgroundColor: Colors.white,
     backgroundColor: Colors.green,
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       selectedItemColor: Colors.green,

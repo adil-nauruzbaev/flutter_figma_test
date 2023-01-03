@@ -38,6 +38,7 @@ class _HomeBottomWidgetState extends State<HomeBottomWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: _widgetOptions.elementAt(_selectedIndex),
+      backgroundColor: Colors.white,
       bottomNavigationBar: ClipRRect(
         borderRadius: BorderRadius.circular(25),
         child: SizedBox(
