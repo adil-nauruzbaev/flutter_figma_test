@@ -45,57 +45,60 @@ class _ListWidgetState extends State<ListWidget> {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 500,
-      width: 400,
+      width: 700,
       child: ListView.builder(
         itemBuilder: (context, index) {
           return Column(
             children: [
-              Container(
-                width: 318,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: Color(0x334385f6),
-                ),
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 18,
-                  vertical: 14,
-                ),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    SizedBox(
-                      width: 36,
-                      height: 37.03,
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Container(
-                            width: 36,
-                            height: 37.03,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10.28),
-                              color: Color(0xff4c8eff),
+              Padding(
+                padding: const EdgeInsets.all(7.5),
+                child: Container(
+                  width: 350,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Color(0x334385f6),
+                  ),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 18,
+                    vertical: 14,
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        width: 36,
+                        height: 37.03,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 36,
+                              height: 37.03,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10.28),
+                                color: Color(0xff4c8eff),
+                              ),
+                              child: const Icon(Icons.qr_code_outlined),
                             ),
-                            child: const Icon(Icons.qr_code_outlined),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
-                    ),
-                    const SizedBox(width: 23),
-                    Text(
-                      _user[0].title.toString(),
-                      style: const TextStyle(
-                        color: Color(0xff211f1f),
-                        fontSize: 18,
-                        fontFamily: "Roboto",
-                        fontWeight: FontWeight.w500,
+                      const SizedBox(width: 23),
+                      Text(
+                        _user[index].title.toString(),
+                        style: const TextStyle(
+                          color: Color(0xff211f1f),
+                          fontSize: 18,
+                          fontFamily: "Roboto",
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ],

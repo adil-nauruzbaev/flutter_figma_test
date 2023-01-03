@@ -1,4 +1,5 @@
 
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 
@@ -15,28 +16,28 @@ class _SelectCategoryWidgetState extends State<SelectCategoryWidget> {
 
   final List<dynamic> categories = [
     {
-      'name': 'Все коды',
+      'name': 'allcodes'.tr().toString(),
     },
     {
-      'name': 'Избранное',
+      'name': 'favourites'.tr().toString(),
     },
     {
-      'name': 'Машина',
+      'name': 'car'.tr().toString(),
     },
     {
-      'name': 'Добавить +',
+      'name': 'add+'.tr().toString(),
     },
     {
-      'name': 'Добавить +',
+      'name': 'add+'.tr().toString(),
     },
   ];
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.only(right: 15, left: 15),
       child: SizedBox(
-        height: 110,
+        height: 35,
         width: double.maxFinite,
         child: ListView.builder(
           itemCount: categories.length,
