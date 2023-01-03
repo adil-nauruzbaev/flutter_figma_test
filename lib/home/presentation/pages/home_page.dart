@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_figma_test/home/presentation/widgets/AppBar/app_bar_widget.dart';
 import 'package:flutter_figma_test/home/presentation/widgets/List/list_widget.dart';
@@ -19,7 +18,6 @@ class HomePage extends StatelessWidget {
             SizedBox(height: 45),
             SelectCategoryWidget(),
             ListWidget(),
-            
           ],
         ),
       ),
